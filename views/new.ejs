@@ -1,0 +1,15 @@
+<%- include("./partials/header") %>
+<nav class = "navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+	Add a new class
+</nav>
+
+<div class = 'container'>
+	<form action = "/lessons" method = "POST">
+		 <input type = "text" name = "lesson[name]" placeholder ="topic">
+		<input type = "text" name = "lesson[image]" placeholder = "image">
+		<input type = "text" name = "lesson[author]" placeholder = "name">
+		<input type = "submit">
+	</form>
+</div>
+
+<%- include("./partials/footer")%>

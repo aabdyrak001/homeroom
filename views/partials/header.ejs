@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homeroom</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b7364d7c23.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" type = "text/css" href = "/stylesheets/lesson.css">
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+    <a class="navbar-brand" href="/"><i class="fas fa-chalkboard-teacher"></i> Homeroom</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+		  <% if(!currentUser) {%>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Student's Room</a>
+        </li>
+		  <%} else {%>
+		<li class="nav-item">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+		  <%}%>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+

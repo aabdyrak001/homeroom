@@ -1,0 +1,29 @@
+<%- include("./partials/header") %>
+
+	<form class = 'form' action = "/lessons/<%=lesson._id%>/topics" method = "POST">
+		<h4 class = 'inputs'>
+			Add a new TOPIC
+		</h4>
+	<div class = "form-group">
+		<input class = 'inputs' type = "text" name = "topic[name]" placeholder ="topic">
+	</div>
+	<div class = "form-group"> 
+		<input class = 'inputs' type = "text" name = "topic[url]" placeholder ="URL to Room">
+	</div>
+	<div class = "form-group"> 
+		<input class = 'inputs' type = "file" name =  "topic[homework]" accept = ".png, .jpeg, .doc, .docx" multiple placeholder = "Homework">
+		</div>
+	<div class = "form-group"> 
+		<textarea class = 'inputs' type = "text" name = "topic[classwork]" placeholder ="Classwork"></textarea>
+	</div>
+	<div class = "form-group"> 
+		<input class = 'inputs' type = "text" name = "topic[author]" placeholder ="Your name">
+	</div>
+	<div class = "form-group"> 
+		<input class = 'btn btn-info inputs' type = "submit">
+	</div>
+	</form>
+	
+
+
+<%- include("./partials/footer")%>

@@ -1,0 +1,27 @@
+<%- include("./partials/header") %>
+
+<!-- classes -->
+<div class = 'container'>
+	<div class = 'top-padding'>
+	<div class = "row">
+		<% lessons.forEach(function(lesson){%>
+			<div class = 'col-md-3 col-sm-6'>
+				<div class = 'img-thumbnail'>
+					<img  src = "<%=lesson.image%>">
+					<hr>
+				</div>				
+				<a href = "/lessons/<%=lesson._id%>">
+					<div class = "caption">
+						<h5 class = "classes"><%=lesson.name%></h5>
+					</div>
+				</a><br>				
+	</div>
+<%})%>
+</div>
+</div>
+</div>
+
+	
+<%- include("./partials/footer")%>
+
+<!-- <div class = 'img-thumbnail'> -->

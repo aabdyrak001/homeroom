@@ -1,0 +1,119 @@
+body{
+    padding-top: 200px;
+    background-color: #F5F7F9  ;
+}
+.navbar-custom{
+    background-color: #e6edf7;
+    color: #07254f;
+
+}
+.navbar-custom .navbar-brand{
+    color: #082a59;
+}
+.navbar-light .navbar-nav .active .nav-link .navbar-right{
+    color: #082a59;
+	display: inline-block;
+	float: right;
+}
+.collapse navbar-collapse .nav-link{
+    color: #082a59;
+}
+
+.jumbotron{
+	padding-top: 70px;
+    text-align: center;
+    background-color:  #e6edf7;
+    color: #082a59;
+	width: 60%;
+	margin-left: 20%;
+}
+.img-thumbnail{
+    border: 0 none;
+    max-width: 300px;
+	padding: 0px;
+}
+img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.classes{
+    text-align: center;
+}
+.head{
+    padding: 30px 0 30px 0;
+    margin: 0px 0 20px 0;
+    text-align: center;
+    background-color: #e6edf7;
+    color: #07254f;
+}
+.container .col-left{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+}
+.container .col-right{
+    width: 65%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+}
+.container{
+    border: 1px dotted slategray;
+    margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	white-space: nowrap;
+}
+.row {
+	display: flex; 
+	flex-wrap: wrap;
+}
+.row .card-title{
+    padding: 12px 0 0 0;
+}
+.row .small-image{
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+    max-width: 10rem;
+}
+.container .col-right .description-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+	border: 1px solid aliceblue;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+.form .inputs{
+	width: 500px;
+	padding-top: 5px;
+}
+.form h4{
+	color: #082a59;
+	float:center;
+	text-align: center
+}
+.top-padding{
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between
+}
+.info {
+	display: block;
+    margin-bottom: 20px;
+	text-align: center;
+}
+.inputs{
+	max-width: 2500px;
+	padding-top: 5px
+}

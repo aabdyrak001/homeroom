@@ -1,0 +1,29 @@
+<%- include("./partials/header") %>
+
+<div class = "container top-padding">
+	
+<div class = "info centered">
+	<h4 style = "text-align: center">
+		<%=topic.name%>
+	</h4>
+	 	<div>
+			<p>
+				Here is a link to the classroom session:
+			</p>
+			<a href="<%=topic.url%>">ClassRoom</a>  
+		</div>
+	<div>
+		<p>
+					<strong><%=topic.classwork%></strong>
+		</p>
+	</div>
+		<div>
+			<p>
+				Here you can download your homework:
+			</p>
+			<a href="<%=topic.homework%>" download="<%=topic.homework%>"> Homework to Download</a>
+		</div>
+
+	</div>
+</div>
+<%- include("./partials/footer")%>

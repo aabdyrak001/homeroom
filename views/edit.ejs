@@ -1,0 +1,30 @@
+<%- include("./partials/header") %>
+
+<div class = "container">
+	<form action = "/lessons/<%=lesson_id%>/topics/<%=topic._id%>?_method=PUT" method = "POST">
+		<div class = "form-group">
+			<h4>
+				EDIT topic
+			</h4>
+		</div>
+		<div class = "form-group">
+			<input type = "text" name = "topic[name]" value = "<%=topic.name%>">
+		</div>
+		<div class = "form-group">
+			<input type = "text" name = "topic[url]" value = "<%=topic.url%>">
+		</div>
+		<div class = "form-group">
+			<input class = 'inputs' type = "file" name =  "topic[homework]" accept = "image/png, image/jpeg, doc,.docx" value = "Homework">
+		</div>	
+		<div class = "form-group">
+			<textarea class = 'inputs' type = "file" name =  "topic[classwork]" accept = "image/png, image/jpeg, doc,.docx" value = "Homework"></textarea>
+		</div>
+		<div class = "form-group">
+			<input type = "submit">
+		</div>
+	</form>
+	
+</div>
+
+
+<%- include("./partials/footer") %>
