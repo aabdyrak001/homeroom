@@ -7,7 +7,8 @@ var passport = require("passport");
 var LocalStrategy = require("passport-local");
 var passportLocalMongoose = require("passport-local-mongoose");
 
-mongoose.connect("mongodb://localhost:27017/homeroom", {
+// "mongodb://localhost:27017/homeroom"
+mongoose.connect("mongodb+srv://homeroomUser:Happy998877@cluster0.nilaa.mongodb.net/<dbname>?retryWrites=true&w=majority", {
 				 useNewUrlParser: true,
 				 useUnifiedTopology: true
 })
@@ -60,6 +61,11 @@ var UserSchema = new mongoose.Schema({
 })
 UserSchema.plugin(passportLocalMongoose);
 var User = mongoose.model("User", UserSchema);
+
+
+// track number of users for data 
+// heroku deploy
+
 
 // =====Passport Config================
 app.use(require("express-session")({
@@ -266,6 +272,6 @@ function isLoggedIn(req,res, next){
 } res.redirect("/login")
 }
 
-app.listen(3000, process.env.IP, function(){
+app.listen(process.env.PORT || 3000, process.env.IP, function(){
 	console.log("App started");
 })
