@@ -1,6 +1,6 @@
 # homeroom
 
-HOMEROOM is an application to help students and teachers in Kyrgyzstan transition to online schooling during COVID-19 crisis.
+HOMEROOM is an application to help students and teachers in Kyrgyzstan transition to online schooling during COVID-19.
 
 This project is one of my initial Node projects, a product of 1.5 week of hard work with special meaning to me and my younger siblings, who encountered problems with homeschooling.
 
